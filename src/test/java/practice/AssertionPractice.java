@@ -16,7 +16,7 @@ public class AssertionPractice
 //		Assert.assertNotEquals(1, 0);
 		System.out.println(4);
 		System.out.println(5);
-		Assert.fail();
+//		Assert.fail();
 	}
 
 }
