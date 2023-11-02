@@ -1,17 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Navigate to contacts ]]>
+    </line>
+    <line>
+      <![CDATA[Click on lookup image]]>
+    </line>
+    <line>
+      <![CDATA[Fill all required details in contats page]]>
+    </line>
+    <line>
+      <![CDATA[Verification, whether contact is created or not]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-11-01T15:06:18 IST" name="Default suite" finished-at="2023-11-01T15:06:18 IST" duration-ms="49">
+  <suite started-at="2023-11-01T20:19:29 IST" name="Default suite" finished-at="2023-11-01T20:20:18 IST" duration-ms="49075">
     <groups>
+      <group name="SmokeTest">
+        <method signature="CreateContactB_C_Test.createContactMethodTest()[pri:0, instance:contactsTests.CreateContactB_C_Test@41d477ed]" name="createContactMethodTest" class="contactsTests.CreateContactB_C_Test"/>
+      </group> <!-- SmokeTest -->
     </groups>
-    <test started-at="2023-11-01T15:06:18 IST" name="Default test" finished-at="2023-11-01T15:06:18 IST" duration-ms="49">
-      <class name="practice.AssertionPractice">
-        <test-method signature="assertion()[pri:0, instance:practice.AssertionPractice@29215f06]" started-at="2023-11-01T15:06:18 IST" name="assertion" finished-at="2023-11-01T15:06:18 IST" duration-ms="8" status="PASS">
+    <test started-at="2023-11-01T20:19:29 IST" name="Default test" finished-at="2023-11-01T20:20:18 IST" duration-ms="49075">
+      <class name="contactsTests.CreateContactB_C_Test">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:contactsTests.CreateContactB_C_Test@41d477ed]" started-at="2023-11-01T20:19:29 IST" name="bsConfig" finished-at="2023-11-01T20:19:29 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- assertion -->
-      </class> <!-- practice.AssertionPractice -->
+        </test-method> <!-- bsConfig -->
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:contactsTests.CreateContactB_C_Test@41d477ed]" started-at="2023-11-01T20:19:30 IST" name="bcConfig" finished-at="2023-11-01T20:19:37 IST" duration-ms="7528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:contactsTests.CreateContactB_C_Test@41d477ed]" started-at="2023-11-01T20:19:37 IST" name="bmConfig" finished-at="2023-11-01T20:19:42 IST" duration-ms="4915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="createContactMethodTest()[pri:0, instance:contactsTests.CreateContactB_C_Test@41d477ed]" started-at="2023-11-01T20:19:42 IST" name="createContactMethodTest" finished-at="2023-11-01T20:20:01 IST" duration-ms="18751" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigate to contacts ]]>
+            </line>
+            <line>
+              <![CDATA[Click on lookup image]]>
+            </line>
+            <line>
+              <![CDATA[Fill all required details in contats page]]>
+            </line>
+            <line>
+              <![CDATA[Verification, whether contact is created or not]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createContactMethodTest -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:contactsTests.CreateContactB_C_Test@41d477ed]" started-at="2023-11-01T20:20:01 IST" name="amConfig" finished-at="2023-11-01T20:20:06 IST" duration-ms="5107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:contactsTests.CreateContactB_C_Test@41d477ed]" started-at="2023-11-01T20:20:06 IST" name="bmConfig" finished-at="2023-11-01T20:20:12 IST" duration-ms="5743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="demoFail()[pri:0, instance:contactsTests.CreateContactB_C_Test@41d477ed]" started-at="2023-11-01T20:20:12 IST" name="demoFail" finished-at="2023-11-01T20:20:12 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoFail -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:contactsTests.CreateContactB_C_Test@41d477ed]" started-at="2023-11-01T20:20:12 IST" name="amConfig" finished-at="2023-11-01T20:20:18 IST" duration-ms="6326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:contactsTests.CreateContactB_C_Test@41d477ed]" started-at="2023-11-01T20:20:18 IST" name="acConfig" finished-at="2023-11-01T20:20:18 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:contactsTests.CreateContactB_C_Test@41d477ed]" started-at="2023-11-01T20:20:19 IST" name="asConfig" finished-at="2023-11-01T20:20:19 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- asConfig -->
+      </class> <!-- contactsTests.CreateContactB_C_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
