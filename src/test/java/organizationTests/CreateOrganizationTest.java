@@ -18,7 +18,7 @@ import objectReposatry.OrganizationPage;
 @Listeners(genericUtilities.ListenersImplementation.class)
 public class CreateOrganizationTest extends BaseClass
 {
-	@Test
+	@Test(groups="SmokeTest")
 	public void createOrgTest() throws Throwable 
 	{
 		

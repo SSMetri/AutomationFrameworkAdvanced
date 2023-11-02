@@ -11,7 +11,7 @@ public class CreateProductPage
 	@FindBy(xpath="//input[@name='productname']")
 	private WebElement productName;
 	
-	@FindBy(xpath="(//input[contains(@onclick,\"this.form.action.value='Save'; return validateInventory('Products')\")])[1]")
+	@FindBy(xpath="(//input[@title='Save [Alt+S]'])[1]")
 	private WebElement saveBtn;
 	
 	//Initialization

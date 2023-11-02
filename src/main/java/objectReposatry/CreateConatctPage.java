@@ -17,7 +17,7 @@ public class CreateConatctPage extends WebDriverUtility
 	@FindBy(xpath="(//img[@title='Select'])[1]")
 	private WebElement organizationLookUpIcon;
 	
-	@FindBy(xpath="//input[contains(@class,'crmbutton small save')]")
+	@FindBy(xpath="(//input[@class='crmButton small save'])[1]")
 	private WebElement saveBtn;
 	
 	@FindBy(xpath="(//input[@id='search_txt'])[1]")
