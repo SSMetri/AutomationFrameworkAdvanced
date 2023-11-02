@@ -49,7 +49,7 @@ public class CreateContactB_C_Test extends BaseClass
 		System.out.println("******END******");
 
 		Reporter.log("Verification, whether contact is created or not");
-		System.out.println("**DONE**");
+		System.out.println("****DONE****");
 
 	}
 	@Test
