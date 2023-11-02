@@ -38,7 +38,7 @@ public class BaseClass
 	}
 	
 //	@Parameters("browser")
-	@BeforeTest
+	@BeforeTest(alwaysRun=true)
 //	@BeforeClass(alwaysRun=true)
 	public void bcConfig(/*String BROWSER*/) throws Throwable
 	{
@@ -94,7 +94,7 @@ public class BaseClass
 		System.out.println("----Logout successful----");
 	}
 	
-	@AfterTest
+	@AfterTest(alwaysRun=true)
 //	@AfterClass(alwaysRun=true)
 	public void acConfig()
 	{

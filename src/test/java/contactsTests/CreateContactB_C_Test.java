@@ -52,11 +52,11 @@ public class CreateContactB_C_Test extends BaseClass
 		System.out.println("****DONE****");
 
 	}
-	@Test
-	public void demoFail()
-	{
-		System.out.println("demoFail");
-	}
+//	@Test
+//	public void demoFail()
+//	{
+//		System.out.println("demoFail");
+//	}
 //	@Test(invocationCount=1)
 //	public void skipTest()
 //	{
