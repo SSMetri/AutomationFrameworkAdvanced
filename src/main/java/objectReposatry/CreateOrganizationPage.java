@@ -27,7 +27,7 @@ public class CreateOrganizationPage extends WebDriverUtility
 	@FindBy(name="rating")
 	private WebElement ratingDrop;
 	
-	@FindBy(xpath="(//input[@title='Save [Alt+S]'])[2]")
+	@FindBy(xpath="(//input[contains(@title,'Save [Alt+S]')])[1]")
 	private WebElement saveBtn;
 	
 	public CreateOrganizationPage(WebDriver driver)
