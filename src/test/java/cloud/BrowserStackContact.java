@@ -2,12 +2,15 @@ package cloud;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.DataProvider;
@@ -40,34 +43,38 @@ public class BrowserStackContact
 	
 	WebDriverUtility util=new WebDriverUtility();
 
-	util.maximizeWindow(driver);
-//	driver.manage().window().maximize();
-	util.waitForPageLoad(driver);
-//	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-	driver.get("http://localhost:8888/index.php");
-	//Login to application with valid credentials
-	driver.findElement(By.xpath("//input[@name='user_name']")).sendKeys("admin");
-	driver.findElement(By.xpath("//input[@name='user_password']")).sendKeys("admin");
-	driver.findElement(By.xpath("//input[@id='submitButton']")).click();
-	//Navigate to Contacts link
-	driver.findElement(By.xpath("//a[normalize-space()='Contacts']")).click();
-	driver.findElement(By.xpath("(//img[@title='Create Contact...'])[1]")).click();
-	//Create Contact with Mandatory fields
-	driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("Bahunmbali");
-	driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys("Mahemndra");
-	WebElement drop=driver.findElement(By.xpath("//select[@name='leadsource']"));
-	util.handleDropDown(drop, "Cold Call");
-//	Select ele=new Select(drop);
-//	ele.selectByValue("Cold Call");
-	driver.findElement(By.xpath("//input[@value='T']")).click();
-	driver.findElement(By.xpath("//input[contains(@class,'crmbutton small save')]")).click();
-	WebElement contact = driver.findElement(By.xpath("//td[@class='dvtSelectedCell']"));
-	System.out.println(contact.isDisplayed());
-	WebElement signoutImg=driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']"));
-	util.mouseHoverAction(driver, signoutImg);
-//	Actions a=new Actions(driver);
-//	a.moveToElement(signoutImg).perform();
-	driver.findElement(By.xpath("//a[normalize-space()='Sign Out']")).click();
+	driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	driver.get("https://www.makemytrip.com/");
+	
+	Actions a=new Actions(driver);
+	a.moveByOffset(15,15).click().perform();
+	
+	driver.findElement(By.xpath("//input[@id='fromCity']")).click();
+	driver.findElement(By.xpath("//p[normalize-space()='Mumbai, India']")).click();
+	driver.findElement(By.xpath("(//label[@for='toCity'])[1]")).click();
+	driver.findElement(By.xpath("//p[normalize-space()='New Delhi, India']")).click();
+	/*
+	Date d=new Date();
+	SimpleDateFormat formater=new SimpleDateFormat("dd");
+	String date = formater.format(d);
+	System.out.println(date);
+	
+	driver.findElement(By.xpath("(//p[contains(text(),'"+date+"')])[1]")).click();
+	*/
+	Date d=new Date();
+	String date =d.toString();
+	System.out.println(date);
+	String[] array=d.toString().split(" ");
+	String currentDate=array[0]+" "+array[1]+" "+array[2]+" "+array[5];
+	System.out.println(currentDate);
+	
+	driver.findElement(By.xpath("//div[@aria-label='"+currentDate+"']\r\n")).click();
+							//div[@aria-label='Fri Dec 08 2023']
+
+	
+	Thread.sleep(3000);
+	driver.close();
 	driver.close();
 	
 
