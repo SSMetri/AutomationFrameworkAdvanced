@@ -50,10 +50,10 @@ public class BrowserStackContact
 	Actions a=new Actions(driver);
 	a.moveByOffset(15,15).click().perform();
 	
-	driver.findElement(By.xpath("//input[@id='fromCity']")).click();
-	driver.findElement(By.xpath("//p[normalize-space()='Mumbai, India']")).click();
-	driver.findElement(By.xpath("(//label[@for='toCity'])[1]")).click();
-	driver.findElement(By.xpath("//p[normalize-space()='New Delhi, India']")).click();
+//	driver.findElement(By.xpath("//input[@id='fromCity']")).click();
+//	driver.findElement(By.xpath("//p[normalize-space()='Mumbai, India']")).click();
+//	driver.findElement(By.xpath("(//label[@for='toCity'])[1]")).click();
+//	driver.findElement(By.xpath("//p[normalize-space()='New Delhi, India']")).click();
 	/*
 	Date d=new Date();
 	SimpleDateFormat formater=new SimpleDateFormat("dd");

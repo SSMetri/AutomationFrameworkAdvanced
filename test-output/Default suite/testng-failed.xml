@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cloud.BrowserStackRun">
+      <class name="cloud.Browserstack3">
         <methods>
-          <include name="browserRun" invocation-numbers="0"/>
+          <include name="browserRun" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- cloud.BrowserStackRun -->
+      </class> <!-- cloud.Browserstack3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
