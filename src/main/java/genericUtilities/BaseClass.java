@@ -37,6 +37,8 @@ public class BaseClass
 		System.out.println("----DB connection successful----");
 	}
 	
+	
+	
 //	@Parameters("browser")
 	@BeforeTest(alwaysRun=true)
 //	@BeforeClass(alwaysRun=true)

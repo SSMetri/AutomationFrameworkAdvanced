@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -59,6 +60,16 @@ public class CreaateMultipleOrganizationTest extends BaseClass
 	public Object[][] getData() throws Throwable, IOException
 	{
 		return eUtil.readMultipleData("MultipleOrganization");
+	}
+	
+	@DataProvider(name ="Data", parallel=true)
+	public Object[][] getData1()
+	{
+		Object[][] test = new Object[][] {
+			{Platform.WINDOWS,"chrome","109"},
+			{Platform.WINDOWS,"firefox","110"},
+			{Platform.MAC,"chrome","80"}};
+			return test;
 	}
 
 }

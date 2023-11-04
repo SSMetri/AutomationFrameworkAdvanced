@@ -16,7 +16,7 @@ public class BrowserStackRun {
 		public static final String AUTOMATE_KEY = "9ycciTz7CY1Df6M1QyzK";
 		public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 		
-		
+		//  https://soubhagyametri_PmIdtq:9ycciTz7CY1Df6M1QyzK@hub-cloud.browserstack.com/wd/hub
 	@Test(dataProvider ="Data")
 	public void browserRun(Platform platform, String BName, String BVersion) throws MalformedURLException, InterruptedException
 	{

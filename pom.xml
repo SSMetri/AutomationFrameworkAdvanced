@@ -235,7 +235,22 @@
 						</plugins> 
 						</build> 
 						</profile>
-
+						
+<profile> 
+	<id>Browserstack_Contact</id> 
+	<build> 
+		<plugins> 
+			<plugin> 
+				<groupId>org.apache.maven.plugins</groupId> 
+				<artifactId>maven-surefire-plugin</artifactId> 
+				<version>3.2.1</version> <configuration> 
+					<suiteXmlFiles> 
+						<suiteXmlFile>testngBrowserStack_Contact.xml</suiteXmlFile> 
+						</suiteXmlFiles> </configuration> 
+						</plugin> 
+						</plugins> 
+						</build> 
+						</profile>
 
 
 
