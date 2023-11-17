@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -62,6 +63,8 @@ public class CreaateMultipleOrganization_DetailsedMethodTest extends BaseClass
 		}
 		wUtil.maximizeWindow(driver);
 		wUtil.waitForPageLoad(driver);
+		
+		Reporter.log("Create Multiple organization test scropt");
 				
 		//Step 4: Load the URL
 		driver.get(URL);

@@ -2,6 +2,7 @@ package contactsTests;
 
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import genericUtilities.BaseClass;
@@ -10,10 +11,12 @@ import objectReposatry.ContactsPage;
 import objectReposatry.CreateConatctPage;
 import objectReposatry.HomePage;
 
+@Listeners(genericUtilities.ListenersImplementation.class)
 public class Create_Contact_CROSSBROWSER extends BaseClass {
-	@Test(groups="SmokeTest")
+	@Test(groups="SmokeTest",retryAnalyzer=genericUtilities.RetryAnalyserImplememtation.class)
 	public void createContactMethodTest() throws Throwable 
 	{
+		Assert.fail();
 		String ORGNAME=eUtil.readDataFromExcelFile("Contacts",7,3)+jUtil.getRandomNumber();
 		String LASTNAME=eUtil.readDataFromExcelFile("Contacts",7,2)+jUtil.getRandomNumber();
 		

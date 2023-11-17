@@ -65,7 +65,7 @@ public class ListenersImplementation implements ITestListener
 		String screenShotName = scriptName + new JavaUtility().getSystemDate();
 		
 		WebDriverUtility w=new WebDriverUtility();
-		try {
+		try { 
 			String path=w.captureScreenShot(BaseClass.sdriver, screenShotName);
 			test.addScreenCaptureFromPath(path);
 		} catch (IOException e) {
@@ -85,7 +85,19 @@ public class ListenersImplementation implements ITestListener
 		
 		//On skip
 		test.log(Status.SKIP,scriptName+"== Skip ==");
-		test.log(Status.INFO, result.getThrowable());
+		test.log(Status.INFO,result.getThrowable());
+		
+		//Screenshot
+		String screenShotName = scriptName + new JavaUtility().getSystemDate();
+		
+		WebDriverUtility w=new WebDriverUtility();
+		try { 
+			String path=w.captureScreenShot(BaseClass.sdriver, screenShotName);
+			test.addScreenCaptureFromPath(path);
+		} catch (IOException e) {
+			// TODO Auto-generatedr5 catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Override

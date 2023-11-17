@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cloud.Browserstack3">
+      <class name="contactsTests.Create_Contact_CROSSBROWSER">
         <methods>
-          <include name="browserRun" invocation-numbers="0 1"/>
+          <include name="createContactMethodTest"/>
+          <include name="amConfig"/>
+          <include name="bmConfig"/>
+          <include name="bcConfig"/>
+          <include name="acConfig"/>
+          <include name="bsConfig"/>
+          <include name="asConfig"/>
         </methods>
-      </class> <!-- cloud.Browserstack3 -->
+      </class> <!-- contactsTests.Create_Contact_CROSSBROWSER -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

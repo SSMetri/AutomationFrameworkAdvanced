@@ -3,11 +3,35 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="cloud.Browserstack3">
+      <class name="testNGpractice.TestNGPractice2">
         <methods>
-          <include name="browserRun" invocation-numbers="0 1"/>
+          <include name="TestNG2"/>
+          <include name="TestNG_M2"/>
         </methods>
-      </class> <!-- cloud.Browserstack3 -->
+      </class> <!-- testNGpractice.TestNGPractice2 -->
+      <class name="testNGpractice.TestNGPractice">
+        <methods>
+          <include name="createCustomer"/>
+          <include name="modifyCustomer"/>
+        </methods>
+      </class> <!-- testNGpractice.TestNGPractice -->
+      <class name="testNGpractice.TestNGPractice4">
+        <methods>
+          <include name="Testng44"/>
+          <include name="Testng"/>
+        </methods>
+      </class> <!-- testNGpractice.TestNGPractice4 -->
+      <class name="testNGpractice.TestNGPractice3">
+        <methods>
+          <include name="Testng33"/>
+          <include name="Testng3"/>
+        </methods>
+      </class> <!-- testNGpractice.TestNGPractice3 -->
+      <class name="testNGpractice.TestNGPractice5">
+        <methods>
+          <include name="Testng5"/>
+        </methods>
+      </class> <!-- testNGpractice.TestNGPractice5 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

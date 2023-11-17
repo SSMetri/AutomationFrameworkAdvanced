@@ -8,7 +8,7 @@ public class TestNGPractice
 	@Test(priority=1,invocationCount=2,enabled=true)
 	public void createCustomer()
 	{
-		Assert.fail();  //To fail the script purposfully, onpy for analysis it is used
+//		Assert.fail();  //To fail the script purposfully, onpy for analysis it is used
 		System.out.println("createCustomer");
 	}
 	

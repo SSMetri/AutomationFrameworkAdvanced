@@ -8,6 +8,10 @@
 	</run>
 </groups>
 
+<listeners>
+<listener class-name="genericUtilities.ListenersImplementation"/>
+</listeners>
+
   <test thread-count="5" name="Test">
     <classes>
       <class name="organizationTests.CreaateMultipleOrganizationTest"/>

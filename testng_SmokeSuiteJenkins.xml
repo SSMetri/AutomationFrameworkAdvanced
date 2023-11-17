@@ -8,6 +8,11 @@
 		<include name="SmokeTest"/>
 	</run>
 </groups>
+
+<listeners>
+<listener class-name="genericUtilities.ListenersImplementation"/>
+</listeners>
+
   <test thread-count="2" parallel="tests" name="Test">
     <classes>
       <class name="contactsTests.CreateContactB_C_Test"/>

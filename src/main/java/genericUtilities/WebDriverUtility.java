@@ -81,7 +81,7 @@ public class WebDriverUtility
 	 */
 	public WebElement flueintWait(WebDriver driver,WebElement element,String locator)
 	{
-		org.openqa.selenium.support.ui.FluentWait<WebDriver> fluentWait = new org.openqa.selenium.support.ui.FluentWait<>(driver)
+		org.openqa.selenium.support.ui.FluentWait<WebDriver> fluentWait = new org.openqa.selenium.support.ui.FluentWait<>(driver)  
         	    .withTimeout(Duration.ofSeconds(30))
         	    .pollingEvery(Duration.ofSeconds(2))
         	    .ignoring(NoSuchElementException.class);
@@ -117,7 +117,7 @@ public class WebDriverUtility
 	public void handleDropDown(String text,WebElement element)
 	{
 		Select s=new Select(element);
-		s.selectByVisibleText(text); 
+		s.selectByVisibleText(text);
 	}
 	/**
 	 * This method will move to elemet, performs mouse hover action

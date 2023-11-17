@@ -67,6 +67,17 @@ public class TestScenario3
 		driver.findElement(By.xpath("//input[@name='website']")).sendKeys("www.qspider.com");
 		driver.findElement(By.xpath("//input[@id='phone']")).sendKeys("77777777777");
 		
+		
+//		driver.findElement(By.xpath("//input[@id='phone']")).submit();
+		/*
+		driver.switchTo().activeElement();
+		driver.switchTo().alert();
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(0);
+		driver.switchTo().parentFrame();
+		driver.switchTo().window(PASSWORD);
+		*/
+
 //		Select "Chemicals" in the industry drop down
 		WebElement industry=driver.findElement(By.xpath("//select[@name='industry']"));
 //		industry.click();

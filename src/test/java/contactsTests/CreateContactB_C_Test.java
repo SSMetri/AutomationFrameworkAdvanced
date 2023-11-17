@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import genericUtilities.BaseClass;
 import objectReposatry.ContactDetailsPage;
@@ -16,7 +17,8 @@ import objectReposatry.HomePage;
 @Listeners(genericUtilities.ListenersImplementation.class)
 public class CreateContactB_C_Test extends BaseClass
 {
-	@Test(groups="SmokeTest")
+	
+	@Test(groups={"SmokeTest","RegressionTest"})
 	public void createContactMethodTest() throws Throwable 
 	{
 		String ORGNAME=eUtil.readDataFromExcelFile("Contacts",7,3)+jUtil.getRandomNumber();
@@ -52,16 +54,24 @@ public class CreateContactB_C_Test extends BaseClass
 		System.out.println("****DONE****");
 
 	}
-//	@Test
-//	public void demoFail()
-//	{
-//		System.out.println("demoFail");
-//	}
-//	@Test(invocationCount=1)
-//	public void skipTest()
-//	{
-//		System.out.println("Test skipped");
-//		Reporter.log("Demo test");
-//	}
+	@Test
+	public void demoFail()
+	{
+		Assert.fail();
+//		Assert.assertSame(eUtil, driver);
+		System.out.println("demoFail");
+	}
+	@Test(invocationCount=1)
+	public void skipTest()
+	{
+		System.out.println("Test skipped");
+		Reporter.log("Demo test");
+		String s1="AAAA";
+		String s2="AAAA";
+		SoftAssert s=new SoftAssert();
+		s.assertEquals(s1,s2);
+		s.assertAll();
+		System.out.println("Complete");
+	}
 
 }
