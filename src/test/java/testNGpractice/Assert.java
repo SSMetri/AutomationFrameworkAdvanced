@@ -11,7 +11,7 @@ public class Assert
 		System.out.println("Print 1");
 		int n1=1,n2=1;
 		SoftAssert s=new SoftAssert();
-		s.fail();
+//		s.fail();
 		System.out.println("Print 2");
 		s.assertEquals(n1,n2);
 		s.assertAll();

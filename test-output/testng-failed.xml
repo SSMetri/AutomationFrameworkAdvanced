@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="contactsTests.Create_Contact_CROSSBROWSER">
+      <class name="practice.ShoppingCartApplication">
         <methods>
-          <include name="createContactMethodTest"/>
-          <include name="amConfig"/>
-          <include name="bmConfig"/>
-          <include name="bcConfig"/>
-          <include name="acConfig"/>
-          <include name="bsConfig"/>
-          <include name="asConfig"/>
+          <include name="main"/>
         </methods>
-      </class> <!-- contactsTests.Create_Contact_CROSSBROWSER -->
+      </class> <!-- practice.ShoppingCartApplication -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

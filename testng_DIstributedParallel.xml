@@ -7,9 +7,10 @@
       <class name="organizationTests.CreateOrganizationTest"/>
     </classes>
   </test> <!-- Test -->
-    <test thread-count="2" parallel="tests" name="Test_2">
+  <test thread-count="2" parallel="tests" name="Test_2">
     <classes>
       <class name="contactsTests.CreateContactB_C_Test"/>
     </classes>
   </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

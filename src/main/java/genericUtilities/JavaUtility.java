@@ -17,7 +17,7 @@ public class JavaUtility
 	public int getRandomNumber()
 	{
 		Random ran=new Random();
-		int r=ran.nextInt(100000);  // 10000 is range
+		int r=ran.nextInt(100000);  // 100000 is range
 		return r;
 	}
 	/**

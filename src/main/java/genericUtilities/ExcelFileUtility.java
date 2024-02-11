@@ -69,7 +69,7 @@ public class ExcelFileUtility
 	 * @return
 	 * @throws Throwable
 	 */
-	public void writeData(String SheetName,Object[][] data) throws Throwable
+	static public void writeData(String SheetName,Object[][] data) throws Throwable
 	{
 	    FileInputStream fis=new FileInputStream(".\\src\\test\\resources\\WriteData.xlsx");
 	    Workbook wb=WorkbookFactory.create(fis);

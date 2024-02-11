@@ -44,7 +44,12 @@ public class CreateOrganizationTest extends BaseClass
 		String header = orgDet.getHeaderText();
 		Assert.assertTrue(header.contains(ORGNAME));
 		System.out.println(header);
+//		Assert.fail();
 		
+	}
+	@Test(groups="RegressionTest",dependsOnGroups="SmokeTest")
+	public void test() {
+		System.out.println("Pass");
 	}
 
 }

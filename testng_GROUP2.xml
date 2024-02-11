@@ -4,8 +4,7 @@
 
 <groups>
 <run>
-<include name="RegressionTest">
-</include>
+<include name="RegressionTest"></include>
 </run>
 </groups>
 

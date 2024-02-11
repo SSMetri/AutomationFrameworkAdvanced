@@ -205,7 +205,7 @@ public class WebDriverUtility
 	 * @param driver
 	 * @param element
 	 */
-	public void scrollDownAction(WebDriver driver,WebElement element)
+	public void scrollDownAction(WebDriver driver)
 	{
 		JavascriptExecutor j=(JavascriptExecutor)driver;
 		j.executeScript("window.scrollBy(0,500);","");
@@ -215,7 +215,7 @@ public class WebDriverUtility
 	 * @param driver
 	 * @param element
 	 */
-	public void scrollUpAction(WebDriver driver,WebElement element)
+	public void scrollUpAction(WebDriver driver)
 	{
 		JavascriptExecutor j=(JavascriptExecutor)driver;
 		j.executeScript("window.scrollBy(0,-500);","");

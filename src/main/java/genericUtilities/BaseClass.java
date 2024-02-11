@@ -2,8 +2,11 @@ package genericUtilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -37,31 +40,38 @@ public class BaseClass
 		System.out.println("----DB connection successful----");
 	}
 	
-	
-	
 //	@Parameters("browser")
 	@BeforeTest(alwaysRun=true)
 //	@BeforeClass(alwaysRun=true)
 	public void bcConfig(/*String BROWSER*/) throws Throwable
 	{
+		/*
+		ChromeOptions chromeOptions=new ChromeOptions();
+		FirefoxOptions firefoxOptions=new FirefoxOptions();
+		EdgeOptions edgeOptions=new EdgeOptions();
+		*/
+		
 		String BROWSER=pUtil.readDataFromPropertyFile("browser");
 		String URL=pUtil.readDataFromPropertyFile("url");
 		if(BROWSER.equalsIgnoreCase("firefox"))
 		{
 			WebDriverManager.firefoxdriver().setup();
-			driver=new FirefoxDriver();
+			driver=new FirefoxDriver(/*firefoxOptions*/);
+//			firefoxOptions.addArguments("--dissable-notifications");
 			System.out.println(BROWSER+"----launched----");
 		}
 		else if(BROWSER.equalsIgnoreCase("edge"))
 		{
 			WebDriverManager.edgedriver().setup();
-			driver=new EdgeDriver();
+			driver=new EdgeDriver(/*edgeOptions*/);
+//			edgeOptions.addArguments("--dissable-notifications");
 			System.out.println(BROWSER+"----launched----");		
 		}
 		else if(BROWSER.equalsIgnoreCase("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
-			driver=new ChromeDriver();
+			driver=new ChromeDriver(/*chromeOptions*/);
+//			chromeOptions.addArguments("--dissable-notifications");
 			System.out.println(BROWSER+"----launched----");		
 		}
 		else

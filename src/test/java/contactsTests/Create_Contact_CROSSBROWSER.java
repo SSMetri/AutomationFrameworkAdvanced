@@ -49,5 +49,9 @@ public class Create_Contact_CROSSBROWSER extends BaseClass {
 		Reporter.log("Verification, whether contact is created or not");
 		System.out.println("****DONE****");
 	}
+	@Test(groups="RegressionTest",dependsOnGroups="SmokeTest")
+	public void test1() {
+		System.out.println("Pass");
+	}
 
 }

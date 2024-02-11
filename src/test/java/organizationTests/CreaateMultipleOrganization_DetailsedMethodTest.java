@@ -115,5 +115,10 @@ public class CreaateMultipleOrganization_DetailsedMethodTest extends BaseClass
 	{
 		return eUtil.readMultipleData("MultipleOrganization");
 	}
+	
+	@Test(groups="Smoke",dependsOnGroups="RegressionTest")
+	public void test() {
+		System.out.println("Pass");
+	}
 
 }

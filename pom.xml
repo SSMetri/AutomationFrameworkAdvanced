@@ -82,6 +82,7 @@
   </dependencies>
   
  <profiles> 
+	 
 	 <profile>
 		 <id>crossBrowser</id>
  <build> 

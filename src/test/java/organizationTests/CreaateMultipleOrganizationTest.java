@@ -62,6 +62,14 @@ public class CreaateMultipleOrganizationTest extends BaseClass
 		return eUtil.readMultipleData("MultipleOrganization");
 	}
 	
+	@DataProvider
+	public void getData11() throws Throwable, IOException
+	{
+		Object[][] data= {{},{1,2}};
+		eUtil.writeData("Sting", data);
+		
+	}
+	
 	
 	
 	

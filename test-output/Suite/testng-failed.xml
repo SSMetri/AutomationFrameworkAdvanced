@@ -2,36 +2,25 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="SmokeTest"/>
+        <include name="RegressionTest"/>
+      </run>
+    </groups>
     <classes>
-      <class name="testNGpractice.TestNGPractice2">
+      <class name="organizationTests.CreateOrganizationTest">
         <methods>
-          <include name="TestNG2"/>
-          <include name="TestNG_M2"/>
+          <include name="amConfig"/>
+          <include name="bmConfig"/>
+          <include name="bcConfig"/>
+          <include name="acConfig"/>
+          <include name="test"/>
+          <include name="bsConfig"/>
+          <include name="asConfig"/>
+          <include name="createOrgTest"/>
         </methods>
-      </class> <!-- testNGpractice.TestNGPractice2 -->
-      <class name="testNGpractice.TestNGPractice">
-        <methods>
-          <include name="createCustomer"/>
-          <include name="modifyCustomer"/>
-        </methods>
-      </class> <!-- testNGpractice.TestNGPractice -->
-      <class name="testNGpractice.TestNGPractice4">
-        <methods>
-          <include name="Testng44"/>
-          <include name="Testng"/>
-        </methods>
-      </class> <!-- testNGpractice.TestNGPractice4 -->
-      <class name="testNGpractice.TestNGPractice3">
-        <methods>
-          <include name="Testng33"/>
-          <include name="Testng3"/>
-        </methods>
-      </class> <!-- testNGpractice.TestNGPractice3 -->
-      <class name="testNGpractice.TestNGPractice5">
-        <methods>
-          <include name="Testng5"/>
-        </methods>
-      </class> <!-- testNGpractice.TestNGPractice5 -->
+      </class> <!-- organizationTests.CreateOrganizationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

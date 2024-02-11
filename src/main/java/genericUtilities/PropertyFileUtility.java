@@ -11,14 +11,14 @@ import java.util.Properties;
  */
 public class PropertyFileUtility 
 {
+	/**
+	* This method will read data from property file and return the value to caller
+	* @param key
+	* @return
+	* @throws
+	*/
 	public String readDataFromPropertyFile(String key) throws Throwable
 	{
-		/**
-		 * This method will read data from property file and return the value to caller
-		 * @param key
-		 * @return
-		 * @throws
-		 */
 		FileInputStream fis=new FileInputStream(".\\src\\test\\resources\\CommonData.properties");
 		Properties p=new Properties();
 		p.load(fis);
